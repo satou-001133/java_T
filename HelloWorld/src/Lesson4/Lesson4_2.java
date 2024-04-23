@@ -24,7 +24,8 @@ class Lesson4_2
 		String[] name = new String[3]; // 商品名を格納する配列
 		int[] x = new int[3]; // 単価を格納する配列
 		int[] y = new int[3]; // 支払金額を格納する配列
-		for (int i = 0; i < 1; i++) //3回繰り返す
+		int totalShortage = 0; // 全体の支払金額を初期化
+		for (int i = 0; i < 1; i++) 
 		{
 			System.out.println("商品を入力してください。");
 			name[i] = br.readLine(); // 商品名を配列に格納
@@ -34,10 +35,6 @@ class Lesson4_2
 			System.out.println("支払金額を入力してください。");
 			String str2 = br.readLine();
 			y[i] = Integer.parseInt(str2); // 支払金額を配列に格納
-		}
-		int totalShortage = 0; // 全体の支払金額を初期化
-		for (int i = 0; i < 1; i++)
-		{
 			int shortage = y[i] - x[i]; // 支払金不足額を算出
 			if (shortage > 0)
 			{
