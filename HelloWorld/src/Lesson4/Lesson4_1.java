@@ -28,30 +28,23 @@ class Lesson4_1
         int[] y = {2000, 0, 0, 3500}; //遅延損害金
         String inputName = br.readLine();
         boolean found = false; // 契約者が見つかったかどうか
-        for (int i = 0; i < name.length; i++)
-        {
-            if (inputName.equals(name[i]))
-            {
+        for (int i = 0; i < 1; i++) {
+            if (inputName.equals(name[i])) {
                 System.out.println("契約金額は " + x[i] + " 円です。");
                 System.out.println("遅延損害金 " + y[i] + " 円です。");
-                found = true; // 契約者該当
                 break;
-            }
-            else
-            {
+            } else {
             	System.out.println("対象の契約者名を入力してください。");
             	return;
             }
         }
         // 遅延している人数を表示
         int zcount = 0; //遅延損害金発生人数
-        for (int z : y)
-        {
-            if (z > 0)
-            {
+        for (int z : y) {
+            if (z > 0) {
                 zcount++;
             }
         }
-        System.out.println("遅延している契約者の数は " + zcount + " 人です。");
+        System.out.println("遅延している契約者の数は " + zcount + "人です。");
     }
 }
