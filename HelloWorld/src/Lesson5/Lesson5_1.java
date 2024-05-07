@@ -12,8 +12,11 @@ import java.util.Scanner;
  * @return 対象外の数値を入力するとやり直し
  */
 class Lesson5_1 {
+	//商品名
     String name;
+    //価格
     double price;
+    //消費税率（10％）
     double TAX_RATE = 0.1;
     public Lesson5_1(String name, double price) {
         this.name = name;
@@ -40,7 +43,8 @@ class Lesson5_1 {
             	}
             } else {
         	System.out.println("数値を入力してください。");
-        	scanner.next(); // 不正な入力を読み捨てる
+        	//不正な入力を読み捨てる
+        	scanner.next(); 
         	}
         }
         Lesson5_1 product = new Lesson5_1(name, price);
