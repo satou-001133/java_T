@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Lesson5_1 {
 	/** 商品名 */
 	String name;
-    /** 価格 */
+	/** 価格 */
 	double price;
 	/** 消費税率（10％） */
 	double TAX_RATE = 0.1;
