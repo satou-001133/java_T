@@ -8,31 +8,34 @@ import java.util.Scanner;
  */
 public class Lesson5_1 {
 	/** 商品名 */
-    String name;
+	String name;
     /** 価格 */
-    double price;
-    /** 消費税率（10％） */
-    double TAX_RATE = 0.1;
-    /**
-     * @param name
-     * @param price
-     */
-    public Lesson5_1(String name, double price) {
-        this.name = name;
-        this.price = price;
-    }
-    public double getTotalPrice() {
-        return price + (price * TAX_RATE);
-    }
-    public static void main(String[] args) {
-        Scanner scanner =
+	double price;
+	/** 消費税率（10％） */
+	double TAX_RATE = 0.1;
+	/**
+	 * @param name
+	 * @param price
+	 */
+	public Lesson5_1(String name, double price) {
+		this.name = name;
+		this.price = price;
+	}
+	public double getTotalPrice() {
+		return price + (price * TAX_RATE);
+	}
+	/**
+	 * @param args コマンドの引数　出力される文字列 数値を指定
+	 */
+	public static void main(String[] args) {
+		Scanner scanner =
         		new Scanner(System.in);
-        System.out.println("商品名を入力してください:");
-        String name = scanner.nextLine();
-        double price;
-        while (true) {
-        	System.out.println("金額を入力してください。");
-        	if(scanner.hasNextDouble()) {
+		System.out.println("商品名を入力してください:");
+		String name = scanner.nextLine();
+		double price;
+		while (true) {
+			System.out.println("金額を入力してください。");
+			if(scanner.hasNextDouble()) {
         		price = scanner.nextDouble();
         		if(price >= 0 ) {
         			break;
