@@ -11,7 +11,7 @@ import java.io.InputStreamReader;
  */
 class Lesson4_2 {
 	/**
-	 * @param args　コマンドの引数　出力される文字列、数値を指定
+	 * @param args　コマンドの引数　出力される文字列 数値を指定
 	 */
 	public static void main(String[] args) throws IOException {
 		BufferedReader br =

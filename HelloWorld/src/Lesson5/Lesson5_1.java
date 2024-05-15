@@ -13,6 +13,10 @@ public class Lesson5_1 {
     double price;
     /** 消費税率（10％） */
     double TAX_RATE = 0.1;
+    /**
+     * @param name
+     * @param price
+     */
     public Lesson5_1(String name, double price) {
         this.name = name;
         this.price = price;

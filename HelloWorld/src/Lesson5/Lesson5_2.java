@@ -5,10 +5,6 @@ import java.util.Scanner;
  * 実力確認問題　5.クラスの基本
  * 演算子（+、-、*、/）と計算値のフィールドを持つ計算クラスを作成してください。
  * 演算子と計算値を入力し、計算結果を出力してください。
- * 【メソッドの説明】
- * @parm num コマンドの引数　出力される文字列、数値を指定
- * @String z num1とnum2 の計算結果
- * @return 対象外の数値を入力するとやり直し
  */
 class Lesson5_2 {
 	/**
@@ -26,6 +22,11 @@ class Lesson5_2 {
 		String operator = scanner.next();
 		calculate(num1,num2,operator);
 	}
+	/*
+	 * @param num1
+	 * @param num2
+	 * @param operator
+	 */
 	public static void calculate(double num1, double num2, String operator) {
 		double result = 0.0;
 		switch(operator) {
@@ -46,7 +47,7 @@ class Lesson5_2 {
 						System.out.println("入力した数値は割り切れません。");
 					}
 					break;
-				default:
+					default:
 					System.out.println("無効な演算子です。");
 					return;
 		}

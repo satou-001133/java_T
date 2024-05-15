@@ -23,6 +23,12 @@ public class Lesson6_2 {
 	private String address; 
 	/** 電話番号 */
 	private String phoneNumber; 
+	/**
+	 * @param name
+	 * @param age
+	 * @param address
+	 * @param phoneNumber
+	 */
 	public Lesson6_2(String name, int age, String address, String phoneNumber) {
 		this.name = name;
 		this.age = age;
@@ -32,6 +38,9 @@ public class Lesson6_2 {
 	public void printInformation() {
 		System.out.println("私の名前は" + name + "です。年齢" + age + "です。住所は" + address + "です。電話番号は" + phoneNumber + "です。");
 	}
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		List<Lesson6_2> human = new ArrayList<>(); //「名前・年齢・住所・電話番号」をリスト化
 		human.add(new Lesson6_2("山田", 26, "東京大田区大森", "090-0000-0000"));

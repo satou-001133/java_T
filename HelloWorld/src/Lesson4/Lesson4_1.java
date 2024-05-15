@@ -10,7 +10,7 @@ package Lesson4;
  */
 class Lesson4_1 {
 	/**
-	 * @param args　コマンドの引数　出力される文字列、数値を指定
+	 * @param args　コマンドの引数　出力される文字列 数値を指定
 	 */
     public static void main(String[] args) {
     	/** 保険契約者 */
