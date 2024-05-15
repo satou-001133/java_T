@@ -24,10 +24,10 @@ public class Lesson6_2 {
 	/** 電話番号 */
 	private String phoneNumber; 
 	/**
-	 * @param name
-	 * @param age
-	 * @param address
-	 * @param phoneNumber
+	 * @param name　名前
+	 * @param age　年齢
+	 * @param address　住所
+	 * @param phoneNumber　電話番号
 	 */
 	public Lesson6_2(String name, int age, String address, String phoneNumber) {
 		this.name = name;
@@ -39,7 +39,7 @@ public class Lesson6_2 {
 		System.out.println("私の名前は" + name + "です。年齢" + age + "です。住所は" + address + "です。電話番号は" + phoneNumber + "です。");
 	}
 	/**
-	 * @param args
+	 * @param args　コマンドの引数　出力される文字列 数値を指定
 	 */
 	public static void main(String[] args) {
 		List<Lesson6_2> human = new ArrayList<>(); //「名前・年齢・住所・電話番号」をリスト化

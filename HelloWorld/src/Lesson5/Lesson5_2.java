@@ -13,7 +13,7 @@ class Lesson5_2 {
 	 */
 	public static void main(String[] args) {
 		Scanner scanner =
-				new Scanner(System.in);	
+				new Scanner(System.in);
 		System.out.println("1つ目の数値を入力してください。");
 		double num1 = scanner.nextDouble();
 		System.out.println("2つ目の数値を入力してください。");
@@ -23,9 +23,9 @@ class Lesson5_2 {
 		calculate(num1,num2,operator);
 	}
 	/*
-	 * @param num1
-	 * @param num2
-	 * @param operator
+	 * @param num1　一つ目の数値
+	 * @param num2　二つ目の数値
+	 * @param operator　演算子
 	 */
 	public static void calculate(double num1, double num2, String operator) {
 		double result = 0.0;
