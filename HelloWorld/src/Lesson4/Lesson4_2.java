@@ -43,7 +43,7 @@ class Lesson4_2 {
 			totalShortage += shortage;
 		}
 		if (totalShortage < 0) {
-			System.out.println("全体の不足金：" + (-totalShortage));
+			System.out.println("全体の不足金：" + (totalShortage));
 		} else {
 			System.out.println("全体の不足金:なし");
 		}
