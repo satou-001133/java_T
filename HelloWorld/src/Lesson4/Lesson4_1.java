@@ -6,7 +6,7 @@ package Lesson4;
  * 契約者名は、String配列に格納（String[] name)
  * 保険料は、int x配列に格納（int[] x)
  * 遅延利息金は、int y配列に格納(int [] y)
- * 遅延利息金発生人数は、int z　でcount(int zcount)
+ * 遅延利息金発生人数は、int delayedInterestCount
  */
 class Lesson4_1 {
 	/**
